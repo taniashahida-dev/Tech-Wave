@@ -22,7 +22,7 @@ margin-top: 50px;
 margin-bottom: 30px;
 }
 .gradient{
-   background: linear-gradient(to right bottom, white 2%, #F7E93F, #FB09B4, #9100F8);
+   background: linear-gradient(to right bottom,  #F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -160,8 +160,47 @@ iframe{
     padding: 40px;
     gap: 24px;
 }
+footer{
+    background-image: url(./assets/footer-bg.png);
+   background-size: cover;
+  background-position: center;
+  height: 300px;
+  padding: 80px 20px;
+  text-align: center;
+position: relative;
+  color: white;
+}
+.footer-title{
+    font-style: Extra Bold;
+font-size: 60px;
+font-weight: 800;
+}
+.footer-content{
+     max-width: 900px;
+  margin: auto;
+}
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+  padding: 80px;
 
-
+}
+.icon img{
+height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.icon img:hover{
+    color: #ff3cac;
+  transform: translateY(-4px);
+}
+.icon{
+   margin: 25px 0;
+  display: flex;
+  justify-content: center;
+ gap: 5px;
+}
  @media screen and (max-width: 576px) {
     
     body>*{
@@ -227,5 +266,23 @@ margin-bottom: 10px;
    flex-direction: column;
     text-align: center;
     gap: 10px;
+}
+footer {
+    height: 200px;
+    padding: 5px 5px;
+}
+.footer-title{
+    font-style: Bold;
+font-size: 40px;
+font-weight: 600;
+}
+.icon-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+}
+.icon {
+    margin-top: 20px;
+    margin: 10px 0;
+   
 }
  }
