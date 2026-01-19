@@ -3,16 +3,17 @@
     padding: 0;
     margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #1A0B2E;
+  
 }
-body>*{
-    margin: 20px 200px;
-   
+body{
+     background-color: #1A0B2E;
 }
+
 main{
     margin-bottom: 300px;
 }
 .section-title{
+    text-align: center;
     color: white;
     font-style: Bold;
 font-size: 48px;
@@ -36,7 +37,8 @@ color: rgba(255, 255, 255, 0.692) ;
 nav{
     display: flex;
     justify-content: space-between;
-    
+     margin: 20px 200px;
+   
    
 }
 nav h1 {
@@ -66,29 +68,34 @@ color: white;
  .about{
     justify-content: center;
     text-align: center;
+     margin: 20px 200px;
  }
  .card-head{
  font-size: 48px;
 font-weight: 800;
 line-height: 50px;
 text-transform: capitalize;
-color:rgba(0, 255, 136, 1) ;
+color:#00ff88 ;
 margin-bottom: 10px;
  }
  
 .about-card{
+    border-top: 1px solid  rgba(255, 255, 255, 0.153);
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
    gap: 30px;
    margin-top: 100px;
    margin-bottom: 100px;
 }
-.choose-section h1{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.choose-section{
+background:  rgba(37, 13, 68, 1); 
+margin: 20px auto;
+padding-top: 50px;
+padding-bottom: 50px;
 }
-.choose-section h5{
+
+ h5 {
     color: white;
 font-style: Bold;
 font-size: 20px;
@@ -98,24 +105,19 @@ margin-top: 10px ;
 margin-bottom: 10px;
 }
 .box{
-align-items: center;
-justify-content: center;
-
 padding: 20px;
 border-radius: 40px;
 background: rgba(53, 17, 101, 0.4);
 }
 .choose-box{
-    
+     margin: 20px 200px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr) ;
     gap: 20px;
 }
 .box-1 {
-    
     grid-row: span 2;
-    
 }
 .box-2 ,.box-3, .box-4 {
     grid-column: span 2;
@@ -126,6 +128,27 @@ background: rgba(53, 17, 101, 0.4);
 .box img{
     padding: 5px;
 }
+
+.features{
+ width: 350px;
+ height: 440px;
+border-radius:  24px ;
+background: rgba(37, 13, 68, 1);  
+padding: 10px;
+
+}
+.feature-container{
+    
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+justify-items: center;
+ margin: 20px 200px;
+}
+iframe{
+  border-radius: 24px 24px 0px 0px;
+}
+
+
  @media screen and (max-width: 576px) {
     
     body>*{
@@ -147,6 +170,10 @@ margin-bottom: 10px;
     margin: 20px 20px;
    
 }
+.about ,.choose-box  ,.feature-container{
+   
+    margin: 20px 2px;
+}
 .card-head{
  font-size: 40px;
 line-height: 38px;
@@ -163,7 +190,7 @@ margin-bottom: 10px;
 .choose-box{
     
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,1fr) ;
+    grid-template-rows: repeat(5,1fr) ;
     gap: 20px;
 }
 .box {
@@ -175,5 +202,12 @@ margin-bottom: 10px;
 }
 .box-4{
     padding-bottom: 40px;
+}
+.feature-container {
+   
+    grid-template-columns: repeat(1, 1fr);
+}
+.features{
+    margin-bottom: 20px;
 }
  }
