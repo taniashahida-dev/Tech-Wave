@@ -31,6 +31,18 @@ p{
 font-weight: 400;
 color: rgba(255, 255, 255, 0.692) ;
 }
+ button{
+gap: 4;
+padding: 12px 16px 12px 16px;
+border-radius: 15px;
+color: white;
+ background: linear-gradient(to left bottom, #F7E93F, #FB09B4, #9100F8);
+ cursor: pointer;
+  transition: 0.3s;
+ }
+button:hover{
+    transform: translateY(-5px);
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -50,13 +62,7 @@ nav h1 {
    align-items: center;
    gap: 30px;
  }
- button{
-gap: 4;
-padding: 12px 16px 12px 16px;
-border-radius: 15px;
-color: white;
- background: linear-gradient(to left bottom, #F7E93F, #FB09B4, #9100F8);
- }
+
  .hamburger{
     display: none;
  }
@@ -135,6 +141,11 @@ line-height: 50px;
 text-transform: capitalize;
 color:#00ff88 ;
 margin-bottom: 10px;
+transition: 0.3s;
+ }
+ .card-head:hover{
+ color: #16a3a887;
+  transform: scale(1.1);
  }
  
 .about-card{
@@ -145,7 +156,9 @@ margin-bottom: 10px;
    gap: 30px;
    margin-top: 100px;
    margin-bottom: 100px;
+   
 }
+
 .choose-section{
 background:  rgba(37, 13, 68, 1); 
 margin: 20px auto;
@@ -220,12 +233,14 @@ iframe{
 }
 footer{
     background-image: url(./assets/footer-bg.png);
-   background-size: cover;
+  background-size: cover;
   background-position: center;
-  
-  padding: 80px 20px;
-  text-align: center;
-
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px;
   color: white;
   
 }
@@ -351,7 +366,6 @@ margin-bottom: 10px;
     gap: 10px;
 }
 footer {
-    padding: 40px 10px;
    margin-bottom: 800px;
 }
 .footer-title {
